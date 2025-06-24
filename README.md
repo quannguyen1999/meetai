@@ -1,20 +1,29 @@
-Step create 
-Step 1 install project 
+Step create
+Step 1 install project
 npx create-next-app@15.3.2
 
-Step 2 then choose option 
-✔ Would you like to use TypeScript? …  / Yes
-✔ Would you like to use ESLint? …  / Yes
-✔ Would you like to use Tailwind CSS? …  / Yes
-✔ Would you like your code inside a `src/` directory? …  / Yes
-✔ Would you like to use App Router? (recommended) …  / Yes
-✔ Would you like to use Turbopack for `next dev`? …  / Yes
+Step 2 then choose option
+✔ Would you like to use TypeScript? … / Yes
+✔ Would you like to use ESLint? … / Yes
+✔ Would you like to use Tailwind CSS? … / Yes
+✔ Would you like your code inside a `src/` directory? … / Yes
+✔ Would you like to use App Router? (recommended) … / Yes
+✔ Would you like to use Turbopack for `next dev`? … / Yes
 ✔ Would you like to customize the import alias (`@/*` by default)? … No
 
+Step 3 then install shadcn
+npx shadcn@2.5.0 init
 
+Step 4 then choose
+Neutral
+Use --legacy-peer-deps
 
+Step 5 then
+npx shadcn@2.5.0 add --all
+then choose
+Use --legacy-peer-deps
 
-
+Step 6
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -51,4 +60,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
 # meetai
