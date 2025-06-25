@@ -23,6 +23,31 @@ npx shadcn@2.5.0 add --all
 then choose
 Use --legacy-peer-deps
 
+Step 6 now access link 
+https://console.neon.tech/app/projects?modal=create_project
+==> create table and database 
+
+Step 7 copy link and create .env 
+DATABASE_URL=<pass your link connect db>
+
+Step 8 now install drizzle 
+npm i drizzle-orm@0.43.1 @neondatabase/serverless@1.0.0 dotenv@16.5.0 --legacy-peer-deps
+
+npm i -D drizzle-kit@0.31.1 tsx@4.19.4 --legacy-peer-deps
+
+Step 9 follow these guild and read the document 
+https://orm.drizzle.team/docs/get-started/neon-new
+
+Step 10 when you reach step create file drizzle.config.ts
+do this 
+npx drizzle-kit push
+
+Step 11 now execute 
+npx drizzle-kit studio
+
+Step 12 
+
+
 Step 6
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
