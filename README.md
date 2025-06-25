@@ -45,7 +45,31 @@ npx drizzle-kit push
 Step 11 now execute 
 npx drizzle-kit studio
 
-Step 12 
+Step 12 then execute this command 
+npm install better-auth@1.2.8 --legacy-peer-deps
+
+Step 13 then add 
+BETTER_AUTH_SECRET in env 
+copy secret from here 
+https://www.better-auth.com/docs/installation
+also 
+BETTER_AUTH_URL=http://localhost:3000 
+
+Step 14 then install version 
+npx @better-auth/cli@1.2.8 generate
+if u get some problem when install just do this 
+export DATABASE_URL=<your actual url>
+then yes for auth-schema.ts 
+
+
+Step 15 when done schema 
+do this 
+npm run db:push 
+
+Step 16 
+
+
+
 
 
 Step 6
