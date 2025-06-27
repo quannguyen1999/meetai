@@ -23,54 +23,61 @@ npx shadcn@2.5.0 add --all
 then choose
 Use --legacy-peer-deps
 
-Step 6 now access link 
+Step 6 now access link
 https://console.neon.tech/app/projects?modal=create_project
-==> create table and database 
+==> create table and database
 
-Step 7 copy link and create .env 
+Step 7 copy link and create .env
 DATABASE_URL=<pass your link connect db>
 
-Step 8 now install drizzle 
+Step 8 now install drizzle
 npm i drizzle-orm@0.43.1 @neondatabase/serverless@1.0.0 dotenv@16.5.0 --legacy-peer-deps
 
 npm i -D drizzle-kit@0.31.1 tsx@4.19.4 --legacy-peer-deps
 
-Step 9 follow these guild and read the document 
+Step 9 follow these guild and read the document
 https://orm.drizzle.team/docs/get-started/neon-new
 
 Step 10 when you reach step create file drizzle.config.ts
-do this 
+do this
 npx drizzle-kit push
 
-Step 11 now execute 
+Step 11 now execute
 npx drizzle-kit studio
 
-Step 12 then execute this command 
+Step 12 then execute this command
 npm install better-auth@1.2.8 --legacy-peer-deps
 
-Step 13 then add 
-BETTER_AUTH_SECRET in env 
-copy secret from here 
+Step 13 then add
+BETTER_AUTH_SECRET in env
+copy secret from here
 https://www.better-auth.com/docs/installation
-also 
-BETTER_AUTH_URL=http://localhost:3000 
+also
+BETTER_AUTH_URL=http://localhost:3000
 
-Step 14 then install version 
+Step 14 then install version
 npx @better-auth/cli@1.2.8 generate
-if u get some problem when install just do this 
+if u get some problem when install just do this
 export DATABASE_URL=<your actual url>
-then yes for auth-schema.ts 
+then yes for auth-schema.ts
 
+Step 15 when done schema
+do this
+npm run db:push
 
-Step 15 when done schema 
-do this 
-npm run db:push 
+Step 16 create github secret
+copy client id and client secret to env
+GITHUB_CLIENT_ID=<client id>
+GITHUB_CLIENT_SECRET=<client secret>
 
-Step 16 
+Step 17 do the same for google
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 
+Step 18 now install
+npm i react-icons --legacy-peer-deps
 
-
-
+Step 19
 
 Step 6
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
