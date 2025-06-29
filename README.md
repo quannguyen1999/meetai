@@ -86,9 +86,13 @@ npm install @trpc/server@11.1.2 @trpc/client@11.1.2 @trpc/tanstack-react-query@1
 and import this env
 NEXT_PUBLIC_VERCEL_URL=<same host 3000>
 
-Step 21
+Step 21 now install
+npm i nanoid --legacy-peer-deps
 
-Step 21
+Step 22 now install
+npm i react-error-boundary --legacy-peer-deps
+
+Step 23
 
 Step 21
 
