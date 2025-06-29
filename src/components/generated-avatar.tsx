@@ -23,14 +23,18 @@ export const GeneratedAvatar = ({
   } else {
     avatar = createAvatar(initials, {
       seed,
-      fontWeight: 500,
+      fontWeight: 50,
       fontSize: 42,
     });
   }
 
   return (
-    <Avatar className={cn(classname)}>
-      <AvatarImage src={avatar.toDataUri()} alt="Avatar" />
+    <Avatar>
+      <AvatarImage
+        className={cn(classname)}
+        src={avatar.toDataUri()}
+        alt="Avatar"
+      />
       <AvatarFallback>{seed.charAt(0).toUpperCase()}</AvatarFallback>
     </Avatar>
   );
