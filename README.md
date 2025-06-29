@@ -77,7 +77,8 @@ GOOGLE_CLIENT_SECRET=
 Step 18 now install
 npm i react-icons --legacy-peer-deps
 
-Step 19
+Step 19 now install 
+npm i @dicebear/core @dicebear/collection --legacy-peer-deps
 
 Step 6
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
