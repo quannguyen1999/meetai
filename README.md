@@ -77,8 +77,20 @@ GOOGLE_CLIENT_SECRET=
 Step 18 now install
 npm i react-icons --legacy-peer-deps
 
-Step 19 now install 
+Step 19 now install
 npm i @dicebear/core @dicebear/collection --legacy-peer-deps
+
+Step 20 install tRPC
+npm install @trpc/server@11.1.2 @trpc/client@11.1.2 @trpc/tanstack-react-query@11.1.2 @tanstack/react-query@5.76.1 zod@3.25.7 client-only server-only --legacy-peer-deps
+
+and import this env
+NEXT_PUBLIC_VERCEL_URL=<same host 3000>
+
+Step 21
+
+Step 21
+
+Step 21
 
 Step 6
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
