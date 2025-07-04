@@ -92,7 +92,8 @@ npm i nanoid --legacy-peer-deps
 Step 22 now install
 npm i react-error-boundary --legacy-peer-deps
 
-Step 23
+Step 23 then install
+npm install @tanstack/react-table --legacy-peer-deps
 
 Step 21
 
