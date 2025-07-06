@@ -98,7 +98,10 @@ npm install @tanstack/react-table --legacy-peer-deps
 Step 21 now install
 npm i nuqs@2.4.3 --legacy-peer-deps
 
-Step 22
+Step 22 now install
+npm i date-fns --legacy-peer-deps
+npm i humanize-duration --legacy-peer-deps
+npm i -D @types/humanize-duration --lefacy-peer-deps
 
 ## Getting Started
 
