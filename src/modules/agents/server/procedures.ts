@@ -11,6 +11,7 @@ import {
   MIN_PAGE_SIZE,
 } from "@/constants";
 import { TRPCError } from "@trpc/server";
+import { nanoid } from "nanoid";
 
 export const agentsRouter = createTRPCRouter({
   update: protectedProcedure
@@ -125,7 +126,11 @@ export const agentsRouter = createTRPCRouter({
     .mutation(async ({ input, ctx }) => {
       const [createdAgent] = await db
         .insert(agents)
-        .values({ ...input, userId: ctx.auth.user.id })
+        .values({
+          id: nanoid(), // TODO: myself
+          ...input,
+          userId: ctx.auth.user.id,
+        })
         .returning();
       return createdAgent;
     }),
