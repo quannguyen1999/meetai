@@ -54,6 +54,21 @@ export const AgentForm = ({
     })
   );
 
+  const updateAgent = useMutation(
+    trpc.agents.update.mutationOptions({
+      onSuccess: async () => {
+        await queryClient.invalidateQueries(
+          trpc.agents.getMany.queryOptions({})
+        );
+
+        onSuccess?.();
+      },
+      onError: (error) => {
+        toast.error(error.message);
+      },
+    })
+  );
+
   const form = useForm<z.infer<typeof agentInsertSchema>>({
     resolver: zodResolver(agentInsertSchema),
     defaultValues: {
@@ -63,11 +78,14 @@ export const AgentForm = ({
   });
 
   const isEdit = !!initialValues?.id;
-  const isPending = createAgent.isPending;
+  const isPending = createAgent.isPending || updateAgent.isPending;
 
   const onSubmit = (values: z.infer<typeof agentInsertSchema>) => {
     if (isEdit) {
-      console.log("update agent", values);
+      updateAgent.mutate({
+        ...values,
+        id: initialValues.id,
+      });
     } else {
       createAgent.mutate(values);
     }
