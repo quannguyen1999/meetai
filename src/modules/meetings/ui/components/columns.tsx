@@ -13,8 +13,8 @@ import {
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { MeetingGetMany } from "@/modules/meetings/types";
-import { humanizeDuration } from "humanize-duration";
 import { format } from "util";
+import { humanizeDuration } from "humanize-duration";
 
 function formatDuration(seconds: number) {
   return humanizeDuration(seconds * 1000, {

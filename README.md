@@ -103,6 +103,19 @@ npm i date-fns --legacy-peer-deps
 npm i humanize-duration --legacy-peer-deps
 npm i -D @types/humanize-duration --lefacy-peer-deps
 
+Step 23 create new env
+NEXT_PUBLIC_STREAM_VIDEO_API_KEY (then copy api key from getstream.io)
+STREAM_VIDEO_SECRET_KEY (also here)
+
+Step 24 then follow this document
+https://getstream.io/video/docs/api/
+npm install @stream-io/node-sdk
+// or using yarn
+yarn add @stream-io/node-sdk
+
+Step 25 now install
+npm install @stream-io/video-react-sdk --legacy-peer-deps
+
 ## Getting Started
 
 First, run the development server:
