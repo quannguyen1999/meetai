@@ -122,7 +122,19 @@ OPENAI_API_KEY
 Step 27 now install
 npm i @stream-io/openai-realtime-api --legacy-peer-deps
 
-Step 28
+Step 28 whenever you run, run 2 command
+npm run dev
+npm run dev:webhook
+
+Step 29 now install
+npm install inngest --legacy-peer-deps
+npx inngest-cli@latest dev
+npm i jsonl-parse-stringify --legacy-peer-deps
+
+Step 30 now go port 8288 => inggest
+
+Step 31 npw install
+npm i @inngest/agent-kit --legacy-peer-deps
 
 ## Getting Started
 
