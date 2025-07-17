@@ -116,6 +116,14 @@ yarn add @stream-io/node-sdk
 Step 25 now install
 npm install @stream-io/video-react-sdk --legacy-peer-deps
 
+Step 26 now attach
+OPENAI_API_KEY
+
+Step 27 now install
+npm i @stream-io/openai-realtime-api --legacy-peer-deps
+
+Step 28
+
 ## Getting Started
 
 First, run the development server:
